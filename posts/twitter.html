@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html style="width: fit-content;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('../navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error fetching navbar:', error);
+        });
+    });
+
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+<!--            line-height: 1.6;-->
+            color: #333;
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+        }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+<!--    nav {-->
+<!--        display: flex;-->
+<!--        flex-wrap: wrap;-->
+<!--        justify-content: space-around;-->
+<!--        background-color: #333;-->
+<!--        padding: 1rem 0;-->
+<!--    }-->
+
+    p {
+        overflow-wrap: anywhere;
+    }
+
+<!--    nav a {-->
+<!--        color: white;-->
+<!--        text-decoration: none;-->
+<!--        padding: 0.5rem 1rem;-->
+<!--    }-->
+
+<!--    nav a:hover {-->
+<!--        background-color: #4CAF50;-->
+<!--    }-->
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2, {
+        color: #fff;
+        margin-bottom:
+1rem;
+}
+    h3,h1 {
+        color: #4CAF50;
+        margin-bottom:
+1rem;
+}
+    p {
+        margin-bottom: 1rem;
+        text-align: justify;
+        justify: inter-word;
+    }
+
+    .section-title {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    ul, ol {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    #article-text {
+        margin-left:25%;
+        max-width:50%;
+
+    }
+    @media (max-width: 800px) {
+        #article-text {
+            margin-left:0%;
+            max-width:100%;
+
+        }
+    }
+    </style>
+</head>
+<body>
+<div id="navbar-container"></div>
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Passionnant échange avec Frédéric Simotel sur<a href="https://twitter.com/bfmbusiness?ref_src=twsrc%5Etfw">@bfmbusiness</a><br>lors de la <a href="https://twitter.com/hashtag/ParisBlockchainWeek?src=hash&amp;ref_src=twsrc%5Etfw">#ParisBlockchainWeek</a> !<a href="https://twitter.com/GroupePartouche?ref_src=twsrc%5Etfw">@GroupePartouche</a><br>explore et adopte le <a href="https://twitter.com/hashtag/Web3?src=hash&amp;ref_src=twsrc%5Etfw">#Web3</a> à travers Partouche Multiverse et notre récente initiative NFT, le Joker Club. <a href="https://twitter.com/hashtag/Innovation?src=hash&amp;ref_src=twsrc%5Etfw">#Innovation</a> <a href="https://twitter.com/hashtag/NFT?src=hash&amp;ref_src=twsrc%5Etfw">#NFT</a> <a href="https://twitter.com/hashtag/JokerClub?src=hash&amp;ref_src=twsrc%5Etfw">#JokerClub</a> 🚀<a href="https://t.co/Guj4wZUQvF">https://t.co/Guj4wZUQvF</a></p>&mdash; Jenner AI (@Jenner_ai) <a href="https://twitter.com/Jenner_ai/status/1668555274859184129?ref_src=twsrc%5Etfw">June 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
